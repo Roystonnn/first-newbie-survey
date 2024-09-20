@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill in this survey as honestly as possible</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" type="text" required placeholder="Type in your name" /></label>
+        <label id="email-label">Enter Your Email: <input id="email" type="email" required placeholder="Type in your email" /></label>
+        <label id="number-label">Enter Your Age: <input id="number" type="number" min="10" max="40" placeholder="Type in your age" /></label>
+        <label>What is your favorite occupation in the organisation?</label>
+        <select id="dropdown">
+          <option>(select one)</option>
+          <option>Orderpicking</option>
+          <option>Loading Pallets</option>
+          <option>Quality Check</option>
+          <option>Counting Stock</option>
+        </select>
+        <label>What is your position in the organisation?</label>
+        <label><input type="radio" id="position" name="position" checked class="inline" value="1" />Manager</label>
+        <label><input id="position" type="radio" name="position" checked class="inline" value="2" />Employee</label>
+      </fieldset>
+      <fieldset>
+        <label>Choose 2 options of what you would like to have improved inside the organisation.</label>
+        <label><input type="checkbox" id="Communication" name="Communication" class="inline" value="1" />Communication</label>
+        <label><input type="checkbox" id="Respect" name="Respect" class="inline" value="2" />Respect</label>
+        <label><input type="checkbox" id="Teamwork" name="Teamwork" class="inline" value="3" />Teamwork</label>
+        <label><input type="checkbox" id="Managing" name="Managing" class="inline" value="4" />Managing</label>
+        <label><input type="checkbox" id="Respect" name="Respect" class="inline" value="5" />Ability to promote</label>
+        <label for="Other comments">Other comments:
+        <textarea id="Other comments" name="Other comments" rows="3" cols="50" placeholder="Write your comment here..." ></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit"></input>
+      </fieldset>
+    </form>
+  </body>
+</html>
